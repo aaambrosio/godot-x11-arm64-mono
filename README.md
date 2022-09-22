@@ -27,7 +27,6 @@ sudo apt install mono-devel -y
 Edit build.sh:
 ```bash
 AUTOMAKE_VERSION="1.16"
-...
 BUILD_NAME="aaambrosio-x11-arm64-mono-lld"
 ```
 
