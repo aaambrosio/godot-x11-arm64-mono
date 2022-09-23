@@ -4,17 +4,12 @@ This repository contains scripts for building Godot for Linux arm64 with Mono.
 
 ## Versions
 
-- OS: Arch, Ubuntu20
+- OS: Ubuntu20 arm64
 - Mono: 6.12.0.182
 - Godot: 3.5-stable
 - godot-mono-builds: release/mono-6.12.0.182
 
 ## Install dependencies
-
-Arch:
-```bash
-sudo pacman -S base-devel clang lld gcc-libs scons pkg-config yasm python-distutils-extra libx11 libxcursor libxinerama mesa glu alsa-lib libpulse udev libxi libxrandr libtool gnupg git autoconf automake curl cmake wget patch mono
-```
 
 ```bash
 sudo apt-get install build-essential clang lld scons pkg-config yasm python3.8-distutils libx11-dev libxcursor-dev libxinerama-dev libgl1-mesa-dev libglu-dev libasound2-dev libpulse-dev libudev-dev libxi-dev libxrandr-dev -y
