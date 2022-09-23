@@ -44,6 +44,8 @@ git clone https://github.com/godotengine/godot.git -b 3.5-stable
 cd godot
 
 sed -i -e "s/custom_build/$BUILD_NAME/g" $SCRIPT_DIR/godot/methods.py
+sed -i -e "s/libatomic.a/libatomic.so/g" $SCRIPT_DIR/godot/platform/server/detect.py
+sed -i -e "s/libatomic.a/libatomic.so/g" $SCRIPT_DIR/godot/platform/x11/detect.py
 
 scons platform=x11 arch=arm64 use_llvm=yes linker=lld mono_prefix=$SCRIPT_DIR/mono-installs/desktop-linux-arm64-release mono_static=yes tools=yes module_mono_enabled=yes mono_glue=no
 
