@@ -1,4 +1,4 @@
-# Godot build for Linux arm64 with Mono
+# Godot build script for Linux arm64 with Mono
 
 This repository contains scripts for building Godot for Linux arm64 with Mono.
 
